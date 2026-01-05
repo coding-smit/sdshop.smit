@@ -1,0 +1,53 @@
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .carousel-item img {
+            height: 70vh;
+            object-fit: cover;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .category-card {
+            transition: 0.3s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .card-img-top{
+            height: 250px;
+        }
+
+
+        /* alerts  css */
+    .btn-logout {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        padding: 12px;
+        background: #e74c3c;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .btn-logout:hover {
+        background: #c0392b;
+    }
+
+     .profile-icon {
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+   

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Deals{% endblock title %}
+
+{% block body %}<!-- #deals section ---------------- -->
+<section id="Deals">
+      <div class="container mt-5">
+    <h1 class="mb-4">Today's Deals</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card border-warning">
+          <div class="card-body">
+            <h5 class="card-title">Flat 30% Off</h5>
+            <p class="card-text">On all Electronics today only!</p>
+            <a href="#shop" class="btn btn-warning">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-success">
+          <div class="card-body">
+            <h5 class="card-title">Buy 1 Get 1 Free</h5>
+            <p class="card-text">On all fashion items.</p>
+            <a href="#shop" class="btn btn-success">Grab Deal</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-danger">
+          <div class="card-body">
+            <h5 class="card-title">Flash Sale - Up to 60% Off</h5>
+            <p class="card-text">Limited time offer on home appliances!</p>
+            <a href="#shop" class="btn btn-danger">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+{% endblock body %}

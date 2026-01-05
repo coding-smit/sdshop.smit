@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Continue with Google</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <style>
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .box {
+            background: #fff;
+            padding: 40px;
+            width: 420px;
+            border-radius: 12px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .box h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .box p {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .google {
+            background: #db4437;
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .google:hover {
+            background: #c23321;
+        }
+
+        .cancel {
+            text-decoration: none;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Continue with Google</h2>
+
+    <p>
+        You are about to sign in using your Google account.
+    </p>
+
+    <form method="post">
+        {% csrf_token %}
+        <button class="google" type="submit">
+            Continue
+        </button>
+    </form>
+
+    <a href="/login/" class="cancel">Cancel & go back</a>
+</div>
+
+</body>
+</html>
