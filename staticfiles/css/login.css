@@ -97,3 +97,8 @@ button {
     background: #e74c3c;
 }
 
+@media (max-width: 576px) {
+  .login-box {
+    padding: 20px;
+  }
+}
