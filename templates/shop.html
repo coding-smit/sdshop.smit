@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 
+{%load static %}
 {% block title %}Shop{% endblock title %}
 
 {% block body %}
@@ -9,7 +10,7 @@
     <div class="row row-cols-1 row-cols-md-4 g-4">
       <div class="col">
         <div class="card h-100">
-          <img src="assets/T-shirt_black.webp" class="card-img-top" alt="Product 1">
+          <img src="{% static 'assets/T-shirt_black.webp' %}" class="card-img-top" alt="Product 1">
           <div class="card-body">
             <h5 class="card-title">Stylish T-shirt</h5>
             <p class="card-text">₹499</p>
@@ -19,7 +20,7 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="assets/headphone.jpg"  class="card-img-top" alt="Product 2">
+          <img src="{% static 'assets/headphone.jpg' %}"  class="card-img-top" alt="Product 2">
           <div class="card-body">
             <h5 class="card-title">Wireless Headphones</h5>
             <p class="card-text">₹1499</p>
@@ -29,7 +30,7 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="assets/watch.webp" class="card-img-top" alt="Product 3">
+          <img src="{% static 'assets/watch.webp' %}" class="card-img-top" alt="Product 3">
           <div class="card-body">
             <h5 class="card-title">Smart Watch</h5>
             <p class="card-text">₹2499</p>
@@ -39,7 +40,7 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="assets/Trendy Sneakers.jpg" class="card-img-top" alt="Product 4">
+          <img src="{% static 'assets/Trendy Sneakers.jpg' %}" class="card-img-top" alt="Product 4">
           <div class="card-body">
             <h5 class="card-title">Trendy Sneakers</h5>
             <p class="card-text">₹1999</p>
