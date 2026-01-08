@@ -2,49 +2,54 @@
 {% block title %}Sign Up{% endblock %}
 
 {% block content %}
-<div class="page-center">
-    <div class="login-box">
-        <h2>Create Account</h2>
+<!-- this is new code of the page -->
 
-        <form method="POST">
-            {% csrf_token %}
-
-            <div class="input-box">
-                <input type="text" name="username" required>
-                <label>Username</label>
-            </div>
-
-            <div class="input-box">
-                <input type="email" name="email" required>
-                <label>Email</label>
-            </div>
-
-            <div class="input-box">
-                <input type="password" name="password1" required>
-                <label>Password</label>
-            </div>
-
-            <div class="input-box">
-                <input type="password" name="password2" required>
-                <label>Confirm Password</label>
-            </div>
-
-            <button type="submit">Sign Up</button>
-        </form>
-
-{% comment %} Source - https://stackoverflow.com/a
-Posted by Daniele Cappuccio
-Retrieved 2025-12-31, License - CC BY-SA 4.0
---> {% endcomment %}
-
-<div class="row">
+ <div class="b-example-divider"></div>
+  <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-4 fw-bold lh-1 mb-3">Your <strong>SDshop </strong> Account</h1>
+        <p class="col-lg-10 fs-4">Securely Sign in to access exclusive deals and personalized recommendations.</p>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+<!--- this is Form Method For Django and Genrate Token-->
+        <form class="p-4 p-md-5 border rounded-3 bg-light" method="POST">
+          {% csrf_token %}
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" name="username" required>
+            <label for="floatingInput"> username</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" name="email" required>
+            <label for="floatingInput"> e-mail address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword"  name="password" required>
+            <label for="floatingPassword">Password</label>
+          </div>
+            
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Log in</button>
+          <hr class="my-4">
+          <small class="text-muted">By clicking sign up, you agree to the terms of use.</small>
+          <div class="row">
   <div class="col-md-3 m-2">
     <a class="btn btn-outline-dark" href="/accounts/google/login/" role="button" style="text-transform:none">
       <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://media.istockphoto.com/id/2228661068/photo/isolated-google-logo-symbolizing-internet-search-and-technology.webp?a=1&b=1&s=612x612&w=0&k=20&c=711C2QCJ2SLkaDr9rZJm3l1TJlqErNAnS3fe0rgcRIg=  " />
-      Login with Google
+      sign up with Google
     </a>
   </div>
+  <p style="text-align:center;margin-top:15px;">
+            Already have an account?
+            <a href="{% url 'login' %}">Login</a>
+        </p>
 </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="b-example-divider"></div>
+
 <!-- Minified CSS and JS -->
 <link   rel="stylesheet" 
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
@@ -56,10 +61,5 @@ Retrieved 2025-12-31, License - CC BY-SA 4.0
 </script>
 
 
-        <p style="text-align:center;margin-top:15px;">
-            Already have an account?
-            <a href="{% url 'login' %}">Login</a>
-        </p>
-    </div>
-</div>
+       
 {% endblock %}

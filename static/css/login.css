@@ -8,7 +8,39 @@
 /* Background */
 body {
     min-height: 100vh;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+strong {
+    color:#667eea;
+}
+
+
+
+
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+        }
+      }
+
+/* for Another purpose */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background */
+body {
+    min-height: 100vh;
 }
 
 /* Center wrapper */
@@ -96,4 +128,3 @@ button {
 .alert-error {
     background: #e74c3c;
 }
-
