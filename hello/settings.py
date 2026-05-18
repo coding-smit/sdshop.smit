@@ -25,12 +25,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-h!()i!iwkwin0d3&(w)c9xm&@!ru+o5+q@(jc#czix%86sd@_9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'sdshop-smit.onrender.com',
     'localhost',
     '127.0.0.1'
+]
+#csrf verify 
+CSRF_TRUSTED_ORIGINS = [
+    'https://sdshop-smit.onrender.com'
 ]
 
 # Application definition
@@ -164,7 +168,6 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/login/'
 
 #forget password authontication 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
