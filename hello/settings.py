@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-h!()i!iwkwin0d3&(w)c9xm&@!ru+o5+q@(jc#czix%86sd@_9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://sdshop-smit.onrender.com/','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['sdshop-smit.onrender.com/','127.0.0.1','localhost']
 
 
 # Application definition
