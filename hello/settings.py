@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-h!()i!iwkwin0d3&(w)c9xm&@!ru+o5+q@(jc#czix%86sd@_9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://sdshop-smit.onrender.com/','127.0.0.1','localhost']
 
 
 # Application definition
@@ -169,7 +169,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-EMAIL_HOST_USER = 'patelsmit9328@gmail.com'
+EMAIL_HOST_USER = 'smitmusic69@gmail.com'
 EMAIL_HOST_PASSWORD = 'ajqu bauh lhro wjtz'
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

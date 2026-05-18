@@ -24,10 +24,13 @@
             <label for="floatingInput"> e-mail address</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="floatingPassword"  name="password" required>
+            <input type="password" class="form-control" id="floatingPassword"  name="password1" required>
             <label for="floatingPassword">Password</label>
           </div>
-            
+            <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword"  name="password2" required>
+            <label for="floatingPassword">Password</label>
+          </div>
           <button class="w-100 btn btn-lg btn-primary" type="submit">Log in</button>
           <hr class="my-4">
           <small class="text-muted">By clicking sign up, you agree to the terms of use.</small>
@@ -40,7 +43,7 @@
   </div>
   <p style="text-align:center;margin-top:15px;">
             Already have an account?
-            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'login' %}">Sign up</a>
         </p>
 </div>
         </form>
