@@ -173,7 +173,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 EMAIL_HOST_USER = 'smitmusic69@gmail.com'
-EMAIL_HOST_PASSWORD = 'ajqu bauh lhro wjtz'
+EMAIL_HOST_PASSWORD = 'bldc nime jqyu tbxy'
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
